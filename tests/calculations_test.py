@@ -70,4 +70,26 @@ def test_get_nth_fibonacci_ten():
     assert result == 55
 
 
+# ...existing code...
+
+def test_area_of_circle_negative_radius():
+    """Test con radio negativo para lanzar ValueError."""
+    radius = -1
+    try:
+        area_of_circle(radius)
+        assert False, "Se esperaba ValueError"
+    except ValueError:
+        assert True
+
+def test_get_nth_fibonacci_negative():
+    """Test con n negativo para lanzar ValueError."""
+    n = -1
+    try:
+        get_nth_fibonacci(n)
+        assert False, "Se esperaba ValueError"
+    except ValueError:
+        assert True
+# ...existing code...
+
+
 
