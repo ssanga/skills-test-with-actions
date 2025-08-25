@@ -68,3 +68,10 @@ def test_get_nth_fibonacci_one():
 
 #     # Assert
 #     assert result == 89
+
+
+'''
+@professortocat, I've run my coverage report.
+Seems there is some opportunity to increase the test coverage. 🧐
+What should we do next?
+'''
