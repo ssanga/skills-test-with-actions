@@ -58,20 +58,38 @@ def test_get_nth_fibonacci_one():
     assert result == 1
 
 
-# def test_get_nth_fibonacci_ten():
-#     """Test with n=10."""
-#     # Arrange
-#     n = 10
+def test_get_nth_fibonacci_ten():
+    """Test with n=10."""
+    # Arrange
+    n = 10
 
-#     # Act
-#     result = get_nth_fibonacci(n)
+    # Act
+    result = get_nth_fibonacci(n)
 
-#     # Assert
-#     assert result == 89
+    # Assert
+    assert result == 55
 
 
-'''
-@professortocat, I've run my coverage report.
-Seems there is some opportunity to increase the test coverage. 🧐
-What should we do next?
-'''
+# ...existing code...
+
+def test_area_of_circle_negative_radius():
+    """Test con radio negativo para lanzar ValueError."""
+    radius = -1
+    try:
+        area_of_circle(radius)
+        assert False, "Se esperaba ValueError"
+    except ValueError:
+        assert True
+
+def test_get_nth_fibonacci_negative():
+    """Test con n negativo para lanzar ValueError."""
+    n = -1
+    try:
+        get_nth_fibonacci(n)
+        assert False, "Se esperaba ValueError"
+    except ValueError:
+        assert True
+# ...existing code...
+
+
+
